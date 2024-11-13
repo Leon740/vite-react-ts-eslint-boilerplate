@@ -3,8 +3,8 @@
 This manual shows how to setup Eslint, Prettier and Husky for any project.
 For example we will use vite-react-ts template.
 
-![eslint](https://raw.githubusercontent.com/Leon740/vite-react-ts-eslint-boilerplate/public/eslint.png?raw=true 'eslint')
-![husky](https://raw.githubusercontent.com/Leon740/vite-react-ts-eslint-boilerplate/public/husky.png?raw=true 'eslint')
+![eslint](https://raw.githubusercontent.com/Leon740/vite-react-ts-eslint-boilerplate/main/public/eslint.png 'eslint')
+![husky](https://raw.githubusercontent.com/Leon740/vite-react-ts-eslint-boilerplate/main/public/husky.png 'husky')
 
 # 0 Theory
 
