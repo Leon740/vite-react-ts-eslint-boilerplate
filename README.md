@@ -5,6 +5,7 @@ For example we will use vite-react-ts template.
 
 ![eslint](https://raw.githubusercontent.com/Leon740/vite-react-ts-eslint-boilerplate/main/public/eslint.png 'eslint')
 ![husky](https://raw.githubusercontent.com/Leon740/vite-react-ts-eslint-boilerplate/main/public/husky.png 'husky')
+![conventional_commits](https://raw.githubusercontent.com/Leon740/vite-react-ts-eslint-boilerplate/main/public/conventional_commits.png 'conventional_commits')
 
 # 0 Theory
 
@@ -244,6 +245,8 @@ Missing an explicit type attribute for buttoneslintreact/button-has-type */}
 export default App
 ```
 
+![eslint](https://raw.githubusercontent.com/Leon740/vite-react-ts-eslint-boilerplate/main/public/eslint.png 'eslint')
+
 ### 3.2 Adding ESLint to existing codebase
 
 If you add ESLint to a codebase where ESLint wasn't used before you might get many errors. What you can do is
@@ -412,6 +415,30 @@ export default {
   '**/*.{ts,tsx}': (stagedFiles) => [`eslint .`, `prettier --write ${stagedFiles.join(' ')}`]
 }
 ```
+
+![husky](https://raw.githubusercontent.com/Leon740/vite-react-ts-eslint-boilerplate/main/public/husky.png 'husky')
+
+## 6 Conventional commits
+
+[link](https://www.conventionalcommits.org/en/v1.0.0/)
+
+### 6.1 Install packages
+
+```bash
+yarn add -D @commitlint/cli @commitlint/config-conventional
+```
+
+### 6.2 app/.husky/commit-msg
+
+npx --no-install commitlint --edit "$1"
+
+### 6.3 app/commitlint.config.js
+
+```js
+export default { extends: ['@commitlint/config-conventional'] }
+```
+
+![conventional_commits](https://raw.githubusercontent.com/Leon740/vite-react-ts-eslint-boilerplate/main/public/conventional_commits.png 'conventional_commits')
 
 # React + TypeScript + Vite
 
