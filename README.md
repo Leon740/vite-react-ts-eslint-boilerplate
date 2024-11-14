@@ -3,8 +3,13 @@
 This manual shows how to setup Eslint, Prettier and Husky for any project.
 For example we will use vite-react-ts template.
 
+ESLint example
 ![eslint](https://raw.githubusercontent.com/Leon740/vite-react-ts-eslint-boilerplate/main/public/eslint.png 'eslint')
+
+Husky example
 ![husky](https://raw.githubusercontent.com/Leon740/vite-react-ts-eslint-boilerplate/main/public/husky.png 'husky')
+
+Conventional Commits example
 ![conventional_commits](https://raw.githubusercontent.com/Leon740/vite-react-ts-eslint-boilerplate/main/public/conventional_commits.png 'conventional_commits')
 
 # 0 Theory
@@ -37,7 +42,13 @@ A program which executes scripts on git actions.
 
 ```bash
 yarn create vite app -- --template react-ts
+```
+
+```bash
 cd app
+```
+
+```bash
 yarn install
 ```
 
@@ -193,7 +204,13 @@ Eslint v9 uses **flat config** (new method of writing eslint config found to add
 
 ## 3 Testing eslint work
 
-### 3.1 Reload VSCode
+### 3.1 settings.json
+
+```json
+"editor.formatOnSave": true,
+```
+
+### 3.2 Reload VSCode
 
 src/App.tsx
 
@@ -247,13 +264,16 @@ export default App
 
 ![eslint](https://raw.githubusercontent.com/Leon740/vite-react-ts-eslint-boilerplate/main/public/eslint.png 'eslint')
 
-### 3.2 Adding ESLint to existing codebase
+### 3.3 Adding ESLint to existing codebase
 
 If you add ESLint to a codebase where ESLint wasn't used before you might get many errors. What you can do is
 
 ```bash
 # fix all files
 yarn lint --fix
+```
+
+```bash
 # fix individual files
 yarn eslint --fix /src/Comp.tsx
 ```
@@ -401,6 +421,9 @@ Run linters against staged git files and don't let 💩 slip into your code base
 
 ```bash
 yarn add -D husky lint-staged
+```
+
+```bash
 npx husky init
 ```
 
